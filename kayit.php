@@ -3,12 +3,21 @@
 <head>
 </head>
 <body>
-    <form action="ekle.php" method="post" name="veri">
-        <input type="text" name="id">
-        <input type="text" name="marka">
-        <input type="text" name="urun_adi">
-        <input type="text" name="stok">
+    <form action="ekle.php" method="post" name="form1">
+        Ürün id<br>
+        <input type="text" name="urunid"><br> 
+        Ürün Adı <br>
+        <input type="text" name="urunadi"><br>
+        Markası <br>
+        <input type="text" name="markasi"><br>
+        Modeli <br>
+        <input type="text" name="modeli"><br>
+        Fiyatı <br>
+        <input type="text" name="fiyati"> <br>
+        Stok <br>
+        <input type="text" name="stok"><br>
         <input type="submit" value="Gönder">
     </form>
+
 </body>
 </html>
