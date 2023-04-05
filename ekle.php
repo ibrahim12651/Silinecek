@@ -7,9 +7,9 @@ $urun_adi = $_POST["urunadi"];
 $marka = $_POST["markasi"];
 $modeli = $_POST["modeli"];
 $fiyati = $_POST["fiyati"];
-$STOK = $_POST["stok"];
+$stok = $_POST["stok"];
 
-$sorgu = "INSERT INTO urunler(URUN_ID,URUN_ADI,MARKASI,MODELI,FIYATI,STOK) VALUES($urun_id,'$urun_adi','$marka','$modeli',$fiyati,$STOK)";
+$sorgu = "INSERT INTO urunler(URUN_ID,URUN_ADI,MARKASI,MODELI,FIYATI,STOK) VALUES($urun_id,'$urun_adi','$marka','$modeli',$fiyati,$stok)";
 
 $eklendi = mysqli_query($baglanti,$sorgu);
 
