@@ -1,17 +1,24 @@
-<html>
-    <body>
-        <?php
-            include("ayar.php");
-            $id = $_POST["id"];
-            $marka = $_POST["marka"];
-            $urun_adi = $_POST["urun_adi"];
-            $stok = $_POST["stok"];
+<?php
 
-            $sorgu = "INSERT INTO malzemeler (Markasi,Urun_adi,Stok) values('$marka','$urun_adi',$stok)";
+include("ayar.php");
 
-            $eklendi = mysqli_query($baglanti,$sorgu);        
-        
-        
-        ?>
-    </body>
-</html>
+$urun_id = $_POST["urunid"];
+$urun_adi = $_POST["urunadi"]; 
+$marka = $_POST["markasi"];
+$modeli = $_POST["modeli"];
+$fiyati = $_POST["fiyati"];
+$STOK = $_POST["stok"];
+
+$sorgu = "INSERT INTO urunler(URUN_ID,URUN_ADI,MARKASI,MODELI,FIYATI,STOK) VALUES($urun_id,'$urun_adi','$marka','$modeli',$fiyati,$STOK)";
+
+$eklendi = mysqli_query($baglanti,$sorgu);
+
+
+
+
+
+
+
+?>
+
+<a href="kayit.php">Yeni Kayıt</a>
