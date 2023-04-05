@@ -1,16 +1,18 @@
-<?php 
+<?php
 
 $host = "localhost";
 $user = "root";
 $pass = "";
-$database = "market";
+$veritabani = "satis";
 
-$baglanti= mysqli_connect($host,$user,$pass,$database);
+$baglanti = mysqli_connect($host,$user,$pass,$veritabani);
 
-if($baglanti == false){
-    die("Bağlantı Hatası:" . mysqli_connect_error());
+if ($baglanti == false){
+    die("Bağlantı kurulamadı".mysqli_connect_error());
 }
-echo "Bağlantı Başaralı";
+echo "Bağlantı Başarılı";
+
+
 
 
 ?>
